@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { width: 270px; margin: 0; font: 13px/1.4 Verdana, Arial, sans-serif; color: #222; }
+    .head { padding: 10px 12px; border-bottom: 1px solid #e1e1e1; font: bold 18px Arial, sans-serif; }
+    .head .a { color: #f2a33a; } .head .b { color: #3b5998; }
+    .body { padding: 10px 12px; }
+    label { display: flex; gap: 8px; align-items: flex-start; margin-bottom: 10px; cursor: pointer; }
+    .muted { color: #888; font-size: 11px; }
+    button { width: 100%; font: bold 12px Verdana, Arial, sans-serif; padding: 6px; border: 1px solid #2d4373; color: #fff; background: #3b5998; border-radius: 3px; cursor: pointer; }
+    button.secondary { background: #f4f4f4; color: #222; border-color: #aaa; font-weight: normal; margin-top: 6px; }
+    #msg { min-height: 1em; margin-top: 6px; font-size: 11px; color: #0a0; }
+  </style>
+</head>
+<body>
+  <div class="head"><span class="a">Leet</span><span class="b">Forces</span></div>
+  <div class="body">
+    <div id="perm" style="display:none; margin-bottom:10px">
+      <div class="muted" style="color:#c00; margin-bottom:6px">The extension can't read leetcode.com yet.</div>
+      <button id="grant">Grant access to leetcode.com</button>
+    </div>
+    <label><input type="checkbox" id="auto"> <span>Open Codeforces view automatically<br><span class="muted">on problems, problemset and contest pages</span></span></label>
+    <label><input type="checkbox" id="button"> <span>Show the floating “CF view” button</span></label>
+    <button id="toggle">Toggle view on this tab</button>
+    <button id="refresh" class="secondary">Refresh difficulty ratings</button>
+    <div id="msg"></div>
+    <div class="muted">Shortcut: Alt+Shift+C</div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

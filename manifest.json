@@ -1,0 +1,74 @@
+{
+  "manifest_version": 3,
+  "name": "LeetForces",
+  "short_name": "LeetForces",
+  "version": "1.0.0",
+  "description": "Unofficial. Shows LeetCode problems, the problemset and contests in a classic Codeforces-style layout.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://leetcode.com/*",
+    "https://zerotrac.github.io/*"
+  ],
+  "background": {
+    "service_worker": "src/background.js",
+    "scripts": [
+      "src/background.js"
+    ]
+  },
+  "action": {
+    "default_title": "LeetForces",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://leetcode.com/*"
+      ],
+      "js": [
+        "src/util.js",
+        "src/api.js",
+        "src/statement.js",
+        "src/ui.js",
+        "src/views/problem.js",
+        "src/views/problemset.js",
+        "src/views/contest.js",
+        "src/views/contests.js",
+        "src/main.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "src/cf.css"
+      ],
+      "matches": [
+        "https://leetcode.com/*"
+      ]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "leetforces@waleedtolba.dev",
+      "strict_min_version": "121.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  },
+  "homepage_url": "https://github.com/waledsaleh/leetforces-extension"
+}
