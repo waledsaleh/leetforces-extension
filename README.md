@@ -20,9 +20,6 @@ The view is an overlay on top of LeetCode, so the LeetCode editor keeps working:
 
 Problem ratings are the Elo-style ratings from [zerotrac/leetcode_problem_rating](https://github.com/zerotrac/leetcode_problem_rating). They're cached for 24 hours and only exist for contest problems.
 
-## Install (developer mode)
-
-**Firefox (121+):** `about:debugging#/runtime/this-firefox` → *Load Temporary Add-on* → pick `manifest.json`.
 
 Open any LeetCode problem and click the **CF view** button (bottom-left), or tick "Open automatically" in the toolbar popup.
 
