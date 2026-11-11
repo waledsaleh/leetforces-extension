@@ -1,5 +1,5 @@
 # LeetForces — LeetCode in Codeforces style
-
+<p align="center"> <img src="icons/icon128.png" width="96" alt="LeetForces icon"> </p> <h1 align="center">LeetForces</h1> <p align="center"> <b>LeetCode problems, problemset and contests in a classic Codeforces-style layout.</b> </p> <p align="center"> <a href="https://addons.mozilla.org/en-US/firefox/addon/leetforces/"><img src="https://img.shields.io/amo/v/leetforces?label=Firefox%20Add-ons&logo=firefoxbrowser&logoColor=white&color=FF7139" alt="Firefox Add-ons version"></a> <a href="https://addons.mozilla.org/en-US/firefox/addon/leetforces/"><img src="https://img.shields.io/amo/users/leetforces?label=users&color=3b5998" alt="Firefox users"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="MIT license"></a> </p> <p align="center"> <a href="https://addons.mozilla.org/en-US/firefox/addon/leetforces/"><b>➜ Install for Firefox</b></a> </p>
 
 https://github.com/user-attachments/assets/3403722e-5518-4e03-8fe9-83b17d86a9c6
 
